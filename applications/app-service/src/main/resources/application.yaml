@@ -1,6 +1,9 @@
 server:
   port: 8080
 spring:
+  threads:
+    virtual:
+      enabled: true
   application:
     name: "JavaVirtualthreads"
   devtools:
@@ -22,3 +25,6 @@ management:
         enabled: true
 cors:
   allowed-origins: "http://localhost:4200,http://localhost:8080"
+logging:
+  level:
+    root: debug
