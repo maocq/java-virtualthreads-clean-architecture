@@ -27,4 +27,7 @@ cors:
   allowed-origins: "http://localhost:4200,http://localhost:8080"
 logging:
   level:
-    root: debug
+    root: info
+adapter:
+  restconsumer:
+    url: "http://localhost:3000"
