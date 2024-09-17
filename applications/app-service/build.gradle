@@ -1,7 +1,8 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
-	implementation project(':okhttp-rest-consumer')
+	implementation project(':restclient-rest-consumer')
+	//implementation project(':okhttp-rest-consumer')
 	testImplementation 'org.springframework:spring-web'
 	implementation project(':api-rest')
     implementation project(':model')
