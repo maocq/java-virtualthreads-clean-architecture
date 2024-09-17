@@ -20,3 +20,5 @@ include ':okhttp-rest-consumer'
 project(':okhttp-rest-consumer').projectDir = file('./infrastructure/driven-adapters/okhttp-rest-consumer')
 include ':restclient-rest-consumer'
 project(':restclient-rest-consumer').projectDir = file('./infrastructure/driven-adapters/restclient-rest-consumer')
+include ':resttemplate-rest-consumer'
+project(':resttemplate-rest-consumer').projectDir = file('./infrastructure/driven-adapters/resttemplate-rest-consumer')
