@@ -24,3 +24,5 @@ include ':resttemplate-rest-consumer'
 project(':resttemplate-rest-consumer').projectDir = file('./infrastructure/driven-adapters/resttemplate-rest-consumer')
 include ':jpa-repository'
 project(':jpa-repository').projectDir = file('./infrastructure/driven-adapters/jpa-repository')
+include ':jdbc-client'
+project(':jdbc-client').projectDir = file('./infrastructure/driven-adapters/jdbc-client')
