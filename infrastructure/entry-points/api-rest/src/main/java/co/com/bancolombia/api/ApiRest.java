@@ -1,5 +1,6 @@
 package co.com.bancolombia.api;
 
+import co.com.bancolombia.model.account.Account;
 import co.com.bancolombia.model.user.User;
 import co.com.bancolombia.usecase.scenarios.ScenariosUseCase;
 import lombok.AllArgsConstructor;
@@ -24,5 +25,16 @@ public class ApiRest {
     public User caseOne(@RequestParam(name = "latency") Optional<Integer> latency) {
         var latencyValue = latency.orElse(0);
         return scenariosUseCase.caseOne(latencyValue);
+    }
+
+    @GetMapping(path = "/case-three")
+    public Optional<Account> caseThree() {
+        return scenariosUseCase.caseThree(4000);
+    }
+
+    @GetMapping(path = "/case-four")
+    public Account caseFour(@RequestParam(name = "latency") Optional<Integer> latency) {
+        var latencyValue = latency.orElse(0);
+        return scenariosUseCase.caseFour(4000, latencyValue);
     }
 }
