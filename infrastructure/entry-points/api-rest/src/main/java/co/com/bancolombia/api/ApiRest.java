@@ -37,4 +37,9 @@ public class ApiRest {
         var latencyValue = latency.orElse(0);
         return scenariosUseCase.caseFour(4000, latencyValue);
     }
+
+    @GetMapping(path = "/case-five")
+    public String caseFive() {
+        return scenariosUseCase.caseFive();
+    }
 }

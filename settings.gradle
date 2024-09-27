@@ -26,3 +26,5 @@ include ':jpa-repository'
 project(':jpa-repository').projectDir = file('./infrastructure/driven-adapters/jpa-repository')
 include ':jdbc-client'
 project(':jdbc-client').projectDir = file('./infrastructure/driven-adapters/jdbc-client')
+include ':dynamo-db'
+project(':dynamo-db').projectDir = file('./infrastructure/driven-adapters/dynamo-db')
